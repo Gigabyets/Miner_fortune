@@ -1,0 +1,86 @@
+.header {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    height: 10%;
+  }
+
+  .logo {
+    margin-right: auto; // ดันโลโก้ไปชิดซ้าย
+    img {
+      width: 20%;
+      height: 100%;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          &:hover {
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+
+  .connect-wallet {
+    
+    button {
+      
+      background-color: gold;
+      color: #000;
+      margin-left: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(gold, 10%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+
+    .logo {
+      margin: 0 auto 20px auto;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .connect-wallet {
+      margin: 0 auto;
+    }
+  }
+}

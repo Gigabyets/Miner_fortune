@@ -1,0 +1,27 @@
+.hero {
+    //background: url('') no-repeat center center / cover;
+    color: #020202;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 50px; 
+    
+    .buttons {
+      margin-top: 20px;
+      .btn {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        cursor: pointer;
+        &.primary {
+          background-color: gold;
+          color: #000;
+        }
+        &.secondary {
+          background-color: transparent;
+          color: gold;
+          border: 2px solid gold;
+        }
+      }
+    }
+  }
+  
